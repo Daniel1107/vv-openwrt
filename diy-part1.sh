@@ -14,8 +14,8 @@
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default  
-git clone https://github.com/destan19/OpenAppFilter' >>feeds.conf.default   
-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default 
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default      
+sed -i '$a src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default  
+sed -i '$a src-git clone https://github.com/destan19/OpenAppFilter' >>feeds.conf.default   
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default  
+sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default 
